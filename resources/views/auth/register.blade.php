@@ -18,45 +18,41 @@
                         </div>
                     @endif
 
-                    <form class="form-horizontal" role="form" method="POST" action="/auth/register">
-                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
-
+                    {!! Form::open( array( 'url' => '/auth/register', 'class' => 'form-horizontal', 'role' => 'form' ) ) !!}
                         <div class="form-group">
-                            <label class="col-md-4 control-label">Name</label>
+                            {!! Form::label( 'Name', array( 'class' => 'col-md-4 control-label' ) ) !!}
                             <div class="col-md-6">
-                                <input type="text" class="form-control" name="name" value="{{ old('name') }}">
+                                {! Form::text( 'name', 'old( 'name' )', array( 'class' => 'form-control' ) ) !}
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label class="col-md-4 control-label">E-Mail Address</label>
+                            {!! Form::label( 'E-Mail Address', array( 'class' => 'col-md-4 control-label' ) ) !!}
                             <div class="col-md-6">
-                                <input type="email" class="form-control" name="email" value="{{ old('email') }}">
+                                {! Form::email( 'email', 'old( 'email' )', array( 'class' => 'form-control' ) ) !}
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label class="col-md-4 control-label">Password</label>
+                            {!! Form::label( 'Password', array( 'class' => 'col-md-4 control-label' ) ) !!}
                             <div class="col-md-6">
-                                <input type="password" class="form-control" name="password">
+                                {! Form::password( 'password', array( 'class' => 'form-control' ) ) !}
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label class="col-md-4 control-label">Confirm Password</label>
+                            {!! Form::label( 'Confirm Password', array( 'class' => 'col-md-4 control-label' ) ) !!}
                             <div class="col-md-6">
-                                <input type="password" class="form-control" name="password_confirmation">
+                                {! Form::password( 'password_confirmation', array( 'class' => 'form-control' ) ) !}
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
-                                    Register
-                                </button>
+                                {!! Form::submit( 'Register', array( 'class' => 'btn btn-primary' ) ) !!}
                             </div>
                         </div>
-                    </form>
+                    {!! Form::close() !!}
                 </div>
             </div>
         </div>
