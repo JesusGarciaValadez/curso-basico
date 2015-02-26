@@ -20,30 +20,30 @@
 
                     {!! Form::open( array( 'url' => '/auth/register', 'class' => 'form-horizontal', 'role' => 'form' ) ) !!}
                         <div class="form-group">
-                            {!! Form::label( 'Name', array( 'class' => 'col-md-4 control-label' ) ) !!}
+                            {!! Form::label( 'name', 'Name', array( 'class' => 'col-md-4 control-label' ) ) !!}
                             <div class="col-md-6">
-                                {! Form::text( 'name', 'old( 'name' )', array( 'class' => 'form-control' ) ) !}
+                                {!! Form::text( 'name', old( 'name' ), array( 'class' => 'form-control' ) ) !!}
                             </div>
                         </div>
 
                         <div class="form-group">
-                            {!! Form::label( 'E-Mail Address', array( 'class' => 'col-md-4 control-label' ) ) !!}
+                            {!! Form::label( 'email', 'E-Mail Address', array( 'class' => 'col-md-4 control-label' ) ) !!}
                             <div class="col-md-6">
-                                {! Form::email( 'email', 'old( 'email' )', array( 'class' => 'form-control' ) ) !}
+                                {!! Form::email( 'email', old( 'email' ), array( 'class' => 'form-control' ) ) !!}
                             </div>
                         </div>
 
                         <div class="form-group">
-                            {!! Form::label( 'Password', array( 'class' => 'col-md-4 control-label' ) ) !!}
+                            {!! Form::label( 'password', 'Password', array( 'class' => 'col-md-4 control-label' ) ) !!}
                             <div class="col-md-6">
-                                {! Form::password( 'password', array( 'class' => 'form-control' ) ) !}
+                                {!! Form::password( 'password', array( 'class' => 'form-control' ) ) !!}
                             </div>
                         </div>
 
                         <div class="form-group">
-                            {!! Form::label( 'Confirm Password', array( 'class' => 'col-md-4 control-label' ) ) !!}
+                            {!! Form::label( 'password_confirmation', 'Confirm Password', array( 'class' => 'col-md-4 control-label' ) ) !!}
                             <div class="col-md-6">
-                                {! Form::password( 'password_confirmation', array( 'class' => 'form-control' ) ) !}
+                                {!! Form::password( 'password_confirmation', array( 'class' => 'form-control' ) ) !!}
                             </div>
                         </div>
 
