@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8e0d96074178d481b8bdad604a2491cd",
+    "hash": "6dc16a88cb79cf136107f2fdfc915e16",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -2069,12 +2069,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "6fb7312d208c9d6f45015953f367e5c33b2bdd5a"
+                "reference": "cc7e4fefb98b90cef783daf73afcc0d8b6a05653"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/6fb7312d208c9d6f45015953f367e5c33b2bdd5a",
-                "reference": "6fb7312d208c9d6f45015953f367e5c33b2bdd5a",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/cc7e4fefb98b90cef783daf73afcc0d8b6a05653",
+                "reference": "cc7e4fefb98b90cef783daf73afcc0d8b6a05653",
                 "shasum": ""
             },
             "require": {
@@ -2133,7 +2133,7 @@
                 "persistence",
                 "queryobject"
             ],
-            "time": "2015-02-10 13:02:17"
+            "time": "2015-02-26 10:47:54"
         },
         {
             "name": "doctrine/instantiator",
