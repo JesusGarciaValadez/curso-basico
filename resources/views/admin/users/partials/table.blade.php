@@ -22,7 +22,10 @@
                                 <td>{{ $user->type }}</td>
                                 <td>
                                     <a href="{{ route( 'admin.users.edit', $user ) }}" title="Editar">Editar</a>
-                                    <a href="{{ route( 'admin.users.destroy', $user ) }}" title="Eliminar">Eliminar</a>
+                                    {!! Form::open( [ 'route' => 'admin.users.destroy', 'method' => 'DELETE' ] ) !!}
+                                    {!! Form::hidden( 'id', $user->id ) !!}
+                                    {!! Form::submit( 'Eliminar', [ 'class' => 'btn btn-danger' ] ) !!}
+                                    {!! Form::close() !!}
                                 </td>
                             </tr>
                         @endforeach
